@@ -1,0 +1,26 @@
+﻿{% extends "layout.html" %}
+
+{% block head %}
+    <script src="/static/ClientScripts/LoginPage/LoginPresenter.js"></script>
+{% endblock %}
+
+{% block content %}
+<form action="/loginRequest" method="POST">
+    <h3>Email</h3>
+    <input id="input_email" type="text" />
+    <h3>Password</h3>
+    <input id="input_password" type="text" />
+    <input id="button_login" type="button" value="login">
+</form>
+<form action="/register">
+    <input id="button_register" type="button" value="register">
+</form>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+    initializeView()
+</script>
+{% endblock %}

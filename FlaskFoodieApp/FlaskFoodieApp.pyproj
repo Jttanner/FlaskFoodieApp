@@ -28,8 +28,49 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="FoodieApp\DAO\interface\IUserDao.py" />
+    <Compile Include="FoodieApp\DAO\interface\__init__.py" />
+    <Compile Include="FoodieApp\DAO\sqlite\UserDao.py" />
+    <Compile Include="FoodieApp\DAO\sqlite\__init__.py" />
+    <Compile Include="FoodieApp\DAO\__init__.py" />
+    <Compile Include="FoodieApp\ServerModels\__init__.py" />
+    <Compile Include="FoodieApp\views.py" />
+    <Compile Include="FoodieApp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FoodieApp\static\ClientScripts\LoginPage\LoginModel.js" />
+    <Content Include="FoodieApp\static\ClientScripts\LoginPage\LoginPresenter.js" />
+    <Content Include="FoodieApp\static\ClientScripts\LoginPage\LoginView.js" />
+    <Content Include="FoodieApp\static\content\bootstrap.css" />
+    <Content Include="FoodieApp\static\content\bootstrap.min.css" />
+    <Content Include="FoodieApp\static\content\site.css" />
+    <Content Include="FoodieApp\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="FoodieApp\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FoodieApp\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="FoodieApp\static\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="FoodieApp\static\scripts\_references.js" />
+    <Content Include="FoodieApp\static\scripts\bootstrap.js" />
+    <Content Include="FoodieApp\static\scripts\bootstrap.min.js" />
+    <None Include="FoodieApp\static\scripts\jquery.validate-vsdoc.js" />
+    <None Include="FoodieApp\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="FoodieApp\static\scripts\jquery-1.10.2.js" />
+    <Content Include="FoodieApp\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="FoodieApp\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="FoodieApp\static\scripts\jquery.validate.js" />
+    <Content Include="FoodieApp\static\scripts\jquery.validate.min.js" />
+    <Content Include="FoodieApp\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="FoodieApp\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="FoodieApp\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="FoodieApp\static\scripts\respond.js" />
+    <Content Include="FoodieApp\static\scripts\respond.min.js" />
+    <Content Include="FoodieApp\templates\login.html" />
+    <Content Include="FoodieApp\templates\old\about.html" />
+    <Content Include="FoodieApp\templates\old\contact.html" />
+    <Content Include="FoodieApp\templates\index.html" />
+    <Content Include="FoodieApp\templates\layout.html" />
+    <Content Include="FoodieApp\templates\register.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +83,27 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FoodieApp\" />
+    <Folder Include="C:\Users\Tanner Desktop\source\repos\FlaskFoodieApp\FlaskFoodieApp\FoodieApp\static\ClientScripts\ClientPresenters\" />
+    <Folder Include="C:\Users\Tanner Desktop\source\repos\FlaskFoodieApp\FlaskFoodieApp\FoodieApp\static\ClientScripts\ClientModels\" />
+    <Folder Include="C:\Users\Tanner Desktop\source\repos\FlaskFoodieApp\FlaskFoodieApp\FoodieApp\static\ClientScripts\LoginPage\" />
+    <Folder Include="FoodieApp\DAO\" />
+    <Folder Include="FoodieApp\DAO\interface\" />
+    <Folder Include="FoodieApp\DAO\sqlite\" />
+    <Folder Include="C:\Users\Tanner Desktop\source\repos\FlaskFoodieApp\FlaskFoodieApp\FoodieApp\static\ClientScripts\" />
+    <Folder Include="FoodieApp\ServerModels\" />
+    <Folder Include="FoodieApp\static\" />
+    <Folder Include="FoodieApp\static\ClientScripts\" />
+    <Folder Include="FoodieApp\static\ClientScripts\ClientModels\" />
+    <Folder Include="FoodieApp\static\ClientScripts\ClientPresenters\" />
+    <Folder Include="FoodieApp\static\ClientScripts\LoginPage\" />
+    <Folder Include="FoodieApp\static\content\" />
+    <Folder Include="FoodieApp\static\fonts\" />
+    <Folder Include="FoodieApp\static\scripts\" />
+    <Folder Include="FoodieApp\templates\" />
+    <Folder Include="FoodieApp\templates\old\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
